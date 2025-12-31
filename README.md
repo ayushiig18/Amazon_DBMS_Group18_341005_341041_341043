@@ -70,4 +70,5 @@ MySQL Server 8.0: The target relational database engine for data storage and que
 SQL DDL/DML: Implementation of structured queries for table creation and sample data insertion.
 
 BY GROUP 18(SECTION A) : AYUSHIE GUPTA (341005), PURVA TYAGI (341041), RADHIKA KHATTAR (341043)
+
 SUBMITTED TO: Mr. ASHOK HARNAL
