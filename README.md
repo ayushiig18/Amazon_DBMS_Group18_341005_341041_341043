@@ -1,7 +1,9 @@
 # Amazon_DBMS_Group18_341005_341041_341043
 Database design and implementation for Amazon using MySQL (DBMS Project)
 
-![Amazon Logo](amazon_logo.jpeg)
+<p align="center">
+  <img src="amazon_logo.jpeg" alt="Amazon Logo" width="400">
+</p>
 
 
 ## EER Diagram
