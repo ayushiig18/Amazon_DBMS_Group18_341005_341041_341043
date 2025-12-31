@@ -27,6 +27,7 @@ Objectives of the Project
 -To demonstrate forward engineering and schema design using MySQL Workbench.
 
 Key Features
+
 -Centralized Customer Management: Unified profiles for users with secure credential handling.
 
 -Dynamic Order Tracking: Full lifecycle management from order placement to shipping status.
@@ -38,6 +39,7 @@ Key Features
 -Review & Feedback Loop: Integrated system for customer-driven product ratings.
 
 Major Entities
+
 -Customer: Stores personal profiles and authentication details (e.g., email, hashed passwords).
 
 -SalesOrder: Records individual transactions, order timestamps, and total amounts.
@@ -53,6 +55,7 @@ Major Entities
 ![Amazon Inventory Warehouse](inventory_image.jpeg)
 
 Relationship Handling & Integrity
+
 -One-to-Many Relationships: A single customer can have multiple addresses and place multiple orders.
 
 -Many-to-Many Bridge: The inventory table manages the complex relationship between products and various warehouse locations.
@@ -64,6 +67,7 @@ Relationship Handling & Integrity
 -Optimized Data Types: Use of BIGINT for high-volume order IDs, DECIMAL(10,2) for financial precision, and TINYINT for statuses and ratings to optimize storage.
 
 Tools and Technologies Used
+
 -MySQL Workbench 8.0: Used for EER modeling and forward engineering the schema.
 
 -MySQL Server 8.0: The target relational database engine for data storage and querying.
