@@ -10,11 +10,11 @@ Database design and implementation for Amazon using MySQL (DBMS Project)
 
 ![EER Diagram](eer_diagram.png)
 
-Amazon E-Commerce Database Management System
+**Amazon E-Commerce Database Management System**
 
 This project presents a structured and normalized database design for an Amazon-inspired e-commerce platform. It demonstrates the practical application of core DBMS concepts such as entity-relationship modeling, normalization to 3NF, and enforcement of relational integrity through primary and foreign keys.
 
-Objectives of the Project
+**Objectives of the Project**
 
 -To model a complex, real-world retail environment using a relational database.
 
@@ -26,7 +26,7 @@ Objectives of the Project
 
 -To demonstrate forward engineering and schema design using MySQL Workbench.
 
-Key Features
+**Key Features**
 
 -Centralized Customer Management: Unified profiles for users with secure credential handling.
 
@@ -38,7 +38,7 @@ Key Features
 
 -Review & Feedback Loop: Integrated system for customer-driven product ratings.
 
-Major Entities
+**Major Entities**
 
 -Customer: Stores personal profiles and authentication details (e.g., email, hashed passwords).
 
@@ -54,7 +54,7 @@ Major Entities
 
 ![Amazon Inventory Warehouse](inventory_image.jpeg)
 
-Relationship Handling & Integrity
+**Relationship Handling & Integrity**
 
 -One-to-Many Relationships: A single customer can have multiple addresses and place multiple orders.
 
@@ -66,7 +66,7 @@ Relationship Handling & Integrity
 
 -Optimized Data Types: Use of BIGINT for high-volume order IDs, DECIMAL(10,2) for financial precision, and TINYINT for statuses and ratings to optimize storage.
 
-Tools and Technologies Used
+**Tools and Technologies Used**
 
 -MySQL Workbench 8.0: Used for EER modeling and forward engineering the schema.
 
