@@ -15,6 +15,7 @@ Amazon E-Commerce Database Management System
 This project presents a structured and normalized database design for an Amazon-inspired e-commerce platform. It demonstrates the practical application of core DBMS concepts such as entity-relationship modeling, normalization to 3NF, and enforcement of relational integrity through primary and foreign keys.
 
 Objectives of the Project
+
 -To model a complex, real-world retail environment using a relational database.
 
 -To reduce data redundancy through strict normalization.
