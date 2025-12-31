@@ -49,6 +49,8 @@ Inventory: Tracks the physical stock quantities mapped across different warehous
 
 OrderItem: Acts as a bridge table to link specific products and quantities to a single order.
 
+![Amazon Inventory Warehouse](inventory_image.jpeg)
+
 Relationship Handling & Integrity
 One-to-Many Relationships: A single customer can have multiple addresses and place multiple orders.
 
