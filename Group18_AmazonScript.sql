@@ -15,13 +15,13 @@ CREATE TABLE IF NOT EXISTS Address (
     customer_id INT NOT NULL,
     street_line_1 VARCHAR(50) NOT NULL,
     city VARCHAR(20) NOT NULL,
-    zip_code VARCHAR(10) NOT NULL,
+    zip_code VARCHAR(6) NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
         ON DELETE RESTRICT
         ON UPDATE CASCADE
 );
 CREATE TABLE IF NOT EXISTS SalesOrder (
-    order_id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT NOT NULL,
     shipping_address_id INT NOT NULL,
     order_datetime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -53,15 +53,15 @@ SELECT * FROM SalesOrder;
 -- Category Table
 CREATE TABLE IF NOT EXISTS Category (
     category_id INT AUTO_INCREMENT PRIMARY KEY,
-    category_name VARCHAR(50) NOT NULL UNIQUE,
-    description VARCHAR(200)
+    category_name VARCHAR(25) NOT NULL UNIQUE,
+    description VARCHAR(100)
 );
 
 -- Product Table
 CREATE TABLE IF NOT EXISTS Product (
     product_id INT AUTO_INCREMENT PRIMARY KEY,
     category_id INT NOT NULL,
-    product_name VARCHAR(100) NOT NULL,
+    product_name VARCHAR(50) NOT NULL,
     price DECIMAL(10,2) NOT NULL,
     status TINYINT NOT NULL DEFAULT 1,  -- 1 = Active, 0 = Inactive
     FOREIGN KEY (category_id) REFERENCES Category(category_id)
@@ -72,8 +72,8 @@ CREATE TABLE IF NOT EXISTS Product (
 -- Warehouse Table
 CREATE TABLE IF NOT EXISTS Warehouse (
     warehouse_id INT AUTO_INCREMENT PRIMARY KEY,
-    warehouse_name VARCHAR(100) NOT NULL,
-    city VARCHAR(50) NOT NULL
+    warehouse_name VARCHAR(30) NOT NULL,
+    city VARCHAR(25) NOT NULL
 );
 
 -- Inventory Table (N:M relationship between Product and Warehouse)
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS Review (
     customer_id INT NOT NULL,
     product_id INT NOT NULL,
     rating TINYINT NOT NULL CHECK (rating BETWEEN 1 AND 5),
-    review_text VARCHAR(300),
+    review_text VARCHAR(100),
     review_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
     FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
