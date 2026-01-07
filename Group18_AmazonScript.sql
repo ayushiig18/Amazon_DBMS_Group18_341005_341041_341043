@@ -4,17 +4,17 @@ create database if not exists amazon18_db;
 USE amazon18_db;
 CREATE TABLE IF NOT EXISTS Customer (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
-    full_name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    phone VARCHAR(15),
+    full_name VARCHAR(25) NOT NULL,
+    email VARCHAR(30) NOT NULL UNIQUE,
+    phone CHAR(10),
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-    hashed_password CHAR(60) NOT NULL
+    hashed_password CHAR(20) NOT NULL
 );
 CREATE TABLE IF NOT EXISTS Address (
     address_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT NOT NULL,
-    street_line_1 VARCHAR(100) NOT NULL,
-    city VARCHAR(50) NOT NULL,
+    street_line_1 VARCHAR(50) NOT NULL,
+    city VARCHAR(20) NOT NULL,
     zip_code VARCHAR(10) NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)
         ON DELETE RESTRICT
