@@ -51,8 +51,10 @@ This project presents a structured and normalized database design for an Amazon-
 5. Inventory: Tracks the physical stock quantities mapped across different warehouses.
 
 6. OrderItem: Acts as a bridge table to link specific products and quantities to a single order.
+   
 
 ![Amazon Inventory Warehouse](inventory_image.jpeg)
+
 
 **Relationship Handling & Integrity**
 
@@ -73,6 +75,7 @@ This project presents a structured and normalized database design for an Amazon-
 2. MySQL Server 8.0: The target relational database engine for data storage and querying.
 
 3. SQL DDL/DML: Implementation of structured queries for table creation and sample data insertion.
+
 
 BY GROUP 18(SECTION A) : AYUSHIE GUPTA (341005), PURVA TYAGI (341041), RADHIKA KHATTAR (341043)
 
